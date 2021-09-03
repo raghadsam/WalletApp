@@ -1,11 +1,12 @@
 let submitButton = document.getElementById("submit");
 let ul = document.getElementById("list");
-const api_key = "x";
+const api_key = config.SECRET_API_KEY;
 let obj = [];
 
 const fetchData = (city_name) => {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${api_key}`
+    `http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=` +
+      api_key
   )
     .then((response) => response.json())
     .then((data) => {
