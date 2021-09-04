@@ -1,0 +1,12 @@
+#body {
+  text-align: center;
+}
+#cityname {
+  width: 50%;
+  display: inline;
+  border-color: #37b6d0;
+  caret-color: #68e6ff;
+}
+ul {
+  list-style-type: none;
+}

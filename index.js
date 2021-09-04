@@ -20,7 +20,7 @@ const fetchData = (city_name) => {
 
 const renderData = () => {
   for (let i = 0; i < obj.length; i++) {
-    ul.innerHTML = `<li>Temperature: ${obj[i].main.temp} <br> Feels like: ${obj[i].main.feels_like}</li>`;
+    ul.innerHTML = `<br/><li>Temperature: ${obj[i].main.temp} <br> Feels like: ${obj[i].main.feels_like}</li>`;
   }
   //city_name = "";
 };
